@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <h1>Simple Calculator</h1>
+    <input type="text" id="display" readonly>
+    <br>
+    <button onclick="enterNumber('1')">1</button>
+    <button onclick="enterNumber('2')">2</button>
+    <button onclick="enterNumber('3')">3</button>
+    <button onclick="clearDisplay()">C</button>
+    <br>
+    <button onclick="enterNumber('4')">4</button>
+    <button onclick="enterNumber('5')">5</button>
+    <button onclick="enterNumber('6')">6</button>
+    <button onclick="appendToDisplay('+')">+</button>
+    <br>
+    <button onclick="enterNumber('7')">7</button>
+    <button onclick="enterNumber('8')">8</button>
+    <button onclick="enterNumber('9')">9</button>
+    <button onclick="appendToDisplay('-')">-</button>
+    <br>
+    <button onclick="enterNumber('0')">0</button>
+    <button onclick="calculateResult()">=</button>
+    <button onclick="appendToDisplay('*')">*</button>
+    <button onclick="appendToDisplay('/')">/</button>
+    <br>
+    <button onclick="calculateSquareRoot()">√</button>
+    <!-- Add more buttons as needed -->
+
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
